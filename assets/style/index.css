@@ -28,6 +28,11 @@
   display: flex;
 }
 
+/* html */
+html {
+  scroll-behavior: smooth;
+}
+
 /* body */
 body {
   background-color: var(--body-bg-color);
