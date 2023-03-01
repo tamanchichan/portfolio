@@ -1,7 +1,68 @@
 @import url('./reset.css');
 
+:root {
+  --body-bg-color: #f2f4f6;
+  --body-color: #000;
+  --header-bg-color: #fff;
+  --header-anchor-color: #4f4f4f;
+  --header-anchor-hover-color: #000;
+}
+
 /* class */
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+}
+
+.flex {
+  display: flex;
+}
+
+/* body */
+body {
+  background-color: var(--body-bg-color);
+  color: var(--body-color);
+  font-size: 15px;
+}
+
+/* header */
+header {
+  background-color: var(--header-bg-color);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 0px;
+  height: 50px;
+  line-height: 50px;
+}
+
+header .flex {
+  justify-content: space-between;
+}
+
+header .header-title h1 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+header .header-nav ul {
+  font-size: 0px;
+}
+
+header .header-nav ul li {
+  display: inline;
+}
+
+header .header-nav ul li + li {
+  margin-left: 15px;
+}
+
+header .header-nav ul li a {
+  color: var(--header-anchor-color);
+  font-size: 20px;
+  transition: all 0.25s ease-in-out;
+}
+
+header .header-nav ul li a:hover {
+  color: var(--header-anchor-hover-color);
 }
