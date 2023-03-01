@@ -6,6 +6,7 @@
   --header-bg-color: #fff;
   --header-anchor-color: #4f4f4f;
   --header-anchor-hover-color: #000;
+  --main-hero-banner-color: #fff;
 }
 
 /* class */
@@ -65,4 +66,23 @@ header .header-nav ul li a {
 
 header .header-nav ul li a:hover {
   color: var(--header-anchor-hover-color);
+}
+
+/* main */
+main .hero-banner {
+  background-image: url(../image/hero-banner.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--main-hero-banner-color);
+  display: grid;
+  font-size: 24px;
+  height: calc(100vh - 50px);
+  place-content: center;
+  text-align: center;
+  text-shadow: 0px 0px 2px #000;
+}
+
+main .hero-banner .container p {
+  width: 360px;
 }
