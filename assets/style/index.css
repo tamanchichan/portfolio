@@ -30,6 +30,10 @@
   display: flex;
 }
 
+.on-hover-up:hover {
+  translate: 0px -15px;
+}
+
 /* html */
 html {
   scroll-behavior: smooth;
@@ -62,22 +66,21 @@ header .header-title h1 {
   text-transform: uppercase;
 }
 
-header .header-nav ul {
+header .header-nav nav ul {
   font-size: 0px;
 }
 
-header .header-nav ul li {
+header .header-nav nav ul li {
   display: inline;
 }
 
-header .header-nav ul li + li {
+header .header-nav nav ul li + li {
   margin-left: 15px;
 }
 
-header .header-nav ul li a {
+header .header-nav nav ul li a {
   color: var(--header-anchor-color);
   font-size: 20px;
-  transition: all 0.25s ease-in-out;
 }
 
 header .header-nav ul li a:hover {
@@ -123,6 +126,7 @@ main section .social-media-nav ul li {
   display: inline-block;
   height: 200px;
   margin: 20px 0px;
+  transition: all 0.25s ease-in-out;
   width: 150px;
 }
 
