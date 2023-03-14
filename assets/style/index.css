@@ -1,12 +1,13 @@
 @import url('./reset.css');
 
 :root {
+  --active-color: #d4d4d4;
   --body-bg-color: #f2f4f6;
   --body-color: #000;
   --header-bg-color: #fff;
   --header-color: #4f4f4f;
   --header-anchor-color: #4f4f4f;
-  --header-anchor-hover-color: #000;
+  --header-anchor-hover-color: #d4d4d4;
   --header-hero-banner-color: #fff;
   --main-section-bg: #fff;
   --main-social-media-nav-li-bg-color: #e5e5e5;
@@ -32,6 +33,10 @@
 }
 
 /* class */
+.active {
+  color: var(--active-color);
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
@@ -40,7 +45,6 @@
 .center {
   display: grid;
   place-content: center;
-  height: 100vh;
 }
 
 .drop-off {
@@ -111,7 +115,7 @@ header .flex {
 
 header .header-title h1 {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -2.5px;
   margin-left: 45px;
 }
@@ -131,10 +135,19 @@ header .header-nav nav ul li + li {
 header .header-nav nav ul li a {
   color: var(--header-anchor-color);
   font-size: 20px;
+  transition: all 0.25s ease-in-out;
+}
+
+header .header-nav nav ul li a.active {
+  color: var(--active-color);
 }
 
 header .header-nav ul li a:hover {
   color: var(--header-anchor-hover-color);
+}
+
+header .hero-banner .center {
+  height: 100vh;
 }
 
 header .hero-banner p {
