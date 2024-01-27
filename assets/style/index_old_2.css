@@ -1,15 +1,13 @@
 @import url('./reset.css');
 
 :root {
-  --active-color: #2e80ed;
   --body-bg-color: #f2f4f6;
   --body-color: #000;
   --header-bg-color: #fff;
-  --header-color: #4f4f4f;
   --header-anchor-color: #4f4f4f;
-  --header-anchor-hover-color: #2e80ed;
-  --header-hero-banner-color: #fff;
+  --header-anchor-hover-color: #000;
   --main-section-bg: #fff;
+  --main-hero-banner-color: #fff;
   --main-social-media-nav-li-bg-color: #e5e5e5;
   --main-social-media-nav-anchor-color: #000;
   --main-social-media-nav-icon-color: #000;
@@ -18,18 +16,6 @@
   --icon-fa-github-color: #000;
   --icon-fa-instagram-color: #c73678;
   --icon-fa-linkedin-color: #0a66c2;
-  --software-developer-color: #2973d5;
-}
-
-/* html */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--body-bg-color);
-  color: var(--body-color);
-  font-size: 15px;
 }
 
 /* animation */
@@ -45,33 +31,6 @@ body {
 }
 
 /* class */
-.active {
-  color: var(--active-color);
-}
-
-.box-1 {
-  /* background-color: #f00; */
-  height: 100vh;
-  width: 15%;
-}
-.box-2 {
-  /* background-color: #0f0; */
-  background-image: url('../image/hero-banner.jpg');
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-  height: calc(100vh - 20px);
-  margin-top: 10px;
-  width: 45%;
-}
-.box-3 {
-  /* background-color: #00f; */
-  height: 100vh;
-  width: 40%;
-}
-
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
@@ -102,62 +61,28 @@ body {
   display: flex;
 }
 
-.greetings {
-  font-size: 48px;
-  font-weight: 300;
-  width: max-content;
-  margin-left: 50px;
-  margin-top: 75px;
-}
-
-.header-nav.flex {
-  font-size: 0px;
-}
-
-.header-title {
-  background-image: url('../image/header-icon.png');
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-position: 0px 5px;
-  font-size: 0px;
-}
-
-/* .hero-banner {
-  background-image: url('../image/hero-banner.jpg');
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-} */
-
 .on-hover:hover {
   translate: 0px -15px;
 }
 
-.portfolio {
-  font-size: 96px;
-  font-weight: 300;
-  letter-spacing: 10px;
-  line-height: 100vh;
-  margin: 0px 0px 0px -175px;
-  opacity: 50%;
-  transform: rotate(-90deg);
-  width: fit-content;
+/* html */
+html {
+  scroll-behavior: smooth;
 }
 
-.software-developer {
-  color: var(--software-developer-color);
-  font-weight: 400;
+/* body */
+body {
+  background-color: var(--body-bg-color);
+  color: var(--body-color);
+  font-size: 15px;
 }
 
 /* header */
 header {
-  /* background-color: var(--header-bg-color); */
-  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5); */
-  /* color: var(--header-color); */
+  background-color: var(--header-bg-color);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 0px;
-  height: 100vh;
+  height: 50px;
   line-height: 50px;
 }
 
@@ -168,54 +93,50 @@ header .flex {
 header .header-title h1 {
   font-size: 30px;
   font-weight: 400;
-  letter-spacing: -2.5px;
-  margin-left: 45px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-header .header-nav.flex {
-  justify-content: flex-end;
-}
-
-/* header .header-nav nav ul {
+header .header-nav nav ul {
   font-size: 0px;
-} */
+}
 
 header .header-nav nav ul li {
   display: inline;
 }
 
 header .header-nav nav ul li + li {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 header .header-nav nav ul li a {
   color: var(--header-anchor-color);
   font-size: 20px;
-  transition: all 0.25s ease-in-out;
-}
-
-header .header-nav nav ul li a.active {
-  color: var(--active-color);
 }
 
 header .header-nav ul li a:hover {
   color: var(--header-anchor-hover-color);
 }
 
-header .hero-banner .center {
-  height: 100vh;
-}
-
-header .hero-banner p {
-  color: var(--header-hero-banner-color);
-  font-size: 24px;
-}
-
-header .box-3 .greetings p {
-  margin: 15px 0px;
-}
-
 /* main */
+main .hero-banner {
+  background-image: url(../image/hero-banner.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--main-hero-banner-color);
+  display: grid;
+  font-size: 24px;
+  height: calc(100vh - 50px);
+  place-content: center;
+  text-align: center;
+  text-shadow: 0px 0px 2px #000;
+}
+
+main .hero-banner .container p {
+  width: 360px;
+}
+
 main section {
   background-color: var(--main-section-bg);
   border-radius: 15px;
