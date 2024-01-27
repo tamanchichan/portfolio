@@ -169,10 +169,14 @@ header .flex {
   justify-content: space-between;
 }
 
+.header-title a {
+  color: #000;
+}
+
 header .header-title h1 {
   font-size: 30px;
   font-weight: 400;
-  letter-spacing: -2.5px;
+  letter-spacing: 2.5px;
   margin-left: 45px;
 }
 
