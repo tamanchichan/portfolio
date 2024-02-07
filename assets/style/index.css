@@ -42,9 +42,11 @@ header .flex {
 }
 
 header .header-title {
-  height: 100px;
-  margin-top: 50px;
-  text-align: center;
+  align-items: center;
+  display: grid;
+  height: 150px;
+  margin-top: 25px;
+  place-items: center;
   width: 100%;
 }
 
@@ -96,7 +98,7 @@ header .header-info {
   align-items: center;
   place-content: center;
   text-align: center;
-  height: calc(100vh - 50px - 100px - 25px - 50px - 25px - 50px);
+  height: calc(100vh - 25px - 150px - 25px - 50px - 25px);
 }
 
 header .header-info p:nth-child(1) {
@@ -122,7 +124,7 @@ main #skills div {
 }
 
 main #skills ul {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -130,12 +132,8 @@ main #skills ul li {
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.50);
   letter-spacing: 2.5px;
-  margin: 10px 0px;
+  margin: 10px 15px;
   padding: 5px 15px;
-}
-
-main #skills ul li + li {
-  margin-left: 30px;
 }
 
 main #skills .programming-languages ul li:nth-child(odd) { background-color: #e5e5e5; }
