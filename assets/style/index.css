@@ -119,7 +119,7 @@ main h2 {
   text-align: center;
 }
 
-main #skills div {
+main #skills .container div {
   margin-top: 25px;
   min-height: 100px;
 }
