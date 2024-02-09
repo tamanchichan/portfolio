@@ -18,7 +18,7 @@ h3 { font-size: 30px; }
 h1, h2, h3 { font-weight: 400; letter-spacing: 2.5px; }
 
 section {
-  margin: 25px 0px;
+  padding: 25px 0px;
 }
 
 /* class */
@@ -108,6 +108,7 @@ header .header-info p:nth-child(1) {
 
 header .header-info p:nth-child(2) {
   font-size: 25px;
+  font-weight: 300;
   letter-spacing: 2.5px;
   margin-top: 50px;
 }
@@ -142,3 +143,17 @@ main #skills .technologies-frameworks ul li:nth-child(even) { background-color: 
 main #skills .technologies-frameworks ul li:nth-child(odd) { background-color: #b2b2b2; }
 main #skills .developer-tools ul li:nth-child(odd) { background-color: #e5e5e5; }
 main #skills .developer-tools ul li:nth-child(even) { background-color: #b2b2b2; }
+
+main #about {
+  background-color: #f2f4f6;
+}
+
+main #about div {
+  min-height: 300px;
+}
+
+main #about p {
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  margin: 10px 0px;
+}
