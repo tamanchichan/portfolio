@@ -130,6 +130,10 @@ main h2 {
   text-align: center;
 }
 
+main section:nth-child(even) { background-color: #f2f4f6; }
+main section:nth-child(odd) { background-color: #fff; }
+
+
 main #skills .container div {
   margin-top: 25px;
   min-height: 100px;
@@ -155,6 +159,10 @@ main #skills .technologies-frameworks ul li:nth-child(odd) { background-color: #
 main #skills .developer-tools ul li:nth-child(odd) { background-color: #e5e5e5; }
 main #skills .developer-tools ul li:nth-child(even) { background-color: #b2b2b2; }
 
+main #projects {
+  min-height: 100vh;
+}
+
 main #experience .container .job .job-title {
   align-items: baseline;
   justify-content: space-between;
@@ -179,10 +187,6 @@ main #experience .container .job ul li {
   letter-spacing: 2.5px;
   list-style-type: disc;
   margin: 15px 0px 15px 30px;
-}
-
-main #about {
-  background-color: #f2f4f6;
 }
 
 main #about .user {
