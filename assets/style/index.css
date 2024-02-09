@@ -148,8 +148,11 @@ main #about {
   background-color: #f2f4f6;
 }
 
-main #about div {
-  min-height: 300px;
+main #about .user {
+  content: url('../image/user.jpg');
+  border-radius: 50%;
+  margin: 25px auto;
+  height: 250px;
 }
 
 main #about p {
