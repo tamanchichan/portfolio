@@ -35,7 +35,7 @@ h1, h2, h3 {
 }
 
 /* header */
-header {}
+/* header {} */
 
 header .header-user {
   align-items: center;
@@ -72,7 +72,10 @@ header .header-menu {
   margin: 25px 0px;
 }
 
-header .header-menu ul { display: inline-flex; }
+header .header-menu ul {
+  display: inline-flex;
+  height: 50px;
+}
 
 header .header-menu ul li { margin: 0px 15px; }
 
@@ -84,4 +87,27 @@ header .header-menu ul li a {
 header .header-menu ul li a:hover {
   color: #4c4cff;
   transition: color 0.25s ease-in;
+}
+
+@media screen and (max-width: 720px) {
+  header .header-user { height: 100px; }
+  
+  header .header-user .user-name { font-size: 30px; }
+  
+  /* header .header-user .user-role {} */
+  
+  header .header-user .user-email { letter-spacing: 5px; }
+  
+  header .header-menu { height: 100px; }
+  
+  header .header-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+  }
+  
+  header .header-menu ul li {
+    height: 50px;
+    line-height: 50px;
+  }
 }
