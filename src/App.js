@@ -1,10 +1,11 @@
 import Header from "./components/Header";
+import Landscape from "./components/Landscape";
 
 function App() {
   return (
     <>
       <header><Header /></header>
-      <main></main>
+      <main><Landscape /></main>
       <footer></footer>
     </>
   );

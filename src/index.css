@@ -90,7 +90,7 @@ header .header-menu ul li a:hover {
 }
 
 @media screen and (max-width: 720px) {
-  header .header-user { height: 100px; }
+  header .header-user { height: 150px; }
   
   header .header-user .user-name { font-size: 30px; }
   
@@ -98,7 +98,7 @@ header .header-menu ul li a:hover {
   
   header .header-user .user-email { letter-spacing: 5px; }
   
-  header .header-menu { height: 100px; }
+  header .header-menu { height: 150px; align-items: center;}
   
   header .header-menu ul {
     flex-wrap: wrap;
@@ -109,5 +109,38 @@ header .header-menu ul li a:hover {
   header .header-menu ul li {
     height: 50px;
     line-height: 50px;
+  }
+}
+
+/* Landscape */
+.user-info {
+  align-items: center;
+  display: grid;
+  height: calc(100vh - 325px - 25px - 25px);
+  place-content: center;
+  text-align: center;
+}
+
+.user-info p:nth-child(1) {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.user-info p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  .user-info p:nth-child(1) {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  
+  .user-info p:nth-child(2) {
+    font-size: 15px;
+    margin-top: 25px;
   }
 }
