@@ -26,8 +26,14 @@ body {
 }
 
 h1 { font-size: 50px; }
-h2 { font-size: 40px;}
+h2 { font-size: 40px; }
 h3 { font-size: 30px; }
+
+@media screen and (max-width:720px) {
+  h1 { font-size: 30px; }
+  h2 { font-size: 25px; }
+  h3 { font-size: 20px; }
+}
 
 h1, h2, h3 {
   font-weight: 400;
@@ -106,18 +112,21 @@ header .header-menu ul li a:hover {
 @media screen and (max-width: 720px) {
   header .header-user { height: 150px; }
   
-  header .header-user .user-name { font-size: 30px; }
+  /* header .header-user .user-name {} */
   
   /* header .header-user .user-role {} */
   
-  header .header-user .user-email { letter-spacing: 5px; }
+  /* header .header-user .user-email {} */
   
-  header .header-menu { height: 150px; align-items: center;}
+  header .header-menu {
+    align-items: center;
+    height: 150px;
+  }
   
   header .header-menu ul {
     flex-wrap: wrap;
-    justify-content: center;
     height: 100px;
+    justify-content: center;
   }
   
   header .header-menu ul li {
