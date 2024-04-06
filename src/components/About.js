@@ -1,3 +1,5 @@
+import resume from "../pdf/taman_chi_chan_resume.pdf";
+
 function About() {
   return(
     <section id="about">
@@ -25,7 +27,7 @@ function About() {
           </p>
           <p>
             <a
-            href="../pdf/taman_chi_chan_resume.pdf"
+            href={resume}
             className="button"
             download="taman_chi_chan_resume"
             >
