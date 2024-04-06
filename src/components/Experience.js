@@ -1,10 +1,10 @@
 function Experience() {
   return(
-    <section id='experience'>
-        <div class='container'>
+    <section id="experience">
+        <div className="container">
           <h2>Experience</h2>
-          <div class='job'>
-            <div class='flex job-title'>
+          <div className="job">
+            <div className="flex job-title">
               <h3>City of Winnipeg: Innovation & Technology</h3>
               <h4>Oct 2023 - Dec 2023</h4>
             </div>

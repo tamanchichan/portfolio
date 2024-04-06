@@ -13,7 +13,7 @@ function Header() {
         <p className="user-email"><a href="mailto:tamanchichan@gmail.com">{user.email}</a></p>
       </div>
       <nav className="flex header-menu">
-        <ul>
+        <ul className="flex">
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>

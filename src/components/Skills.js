@@ -1,9 +1,9 @@
 function Skills() {
   return(
     <section id="skills">
-        <div class="container">
+        <div className="container">
           <h2>Technical Skills</h2>
-          <div class="programming-languages">
+          <div className="programming-languages">
             <h3>Programming Languages:</h3>
             <ul>
               <li>HTML</li>
@@ -15,7 +15,7 @@ function Skills() {
               <li>Python</li>
             </ul>
           </div>
-          <div class="technologies-frameworks">
+          <div className="technologies-frameworks">
             <h3>Technologies/Frameworks:</h3>
             <ul>
               <li>Git</li>
@@ -26,7 +26,7 @@ function Skills() {
               <li>ASP.NET</li>
             </ul>
           </div>
-          <div class="developer-tools">
+          <div className="developer-tools">
             <h3>Developer Tools:</h3>
             <ul>
               <li>GitHub</li>
