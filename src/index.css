@@ -11,6 +11,7 @@
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* html */
@@ -50,6 +51,8 @@ section h2 {
   border-bottom: 1px solid #000;
   text-align: center;
 }
+
+section .container div { margin-top: 25px; }
 
 section:nth-child(even) { background-color: #fff; }
 section:nth-child(odd) { background-color: #f2f4f6; }
@@ -171,10 +174,7 @@ header .header-menu ul li a:hover {
 }
 
 /* Skills */
-#skills .container div {
-  margin-top: 25px;
-  min-height: 100px;
-}
+#skills .container div { min-height: 100px; }
 
 #skills ul {
   display: flex;
@@ -189,11 +189,52 @@ header .header-menu ul li a:hover {
   padding: 5px 15px;
 }
 
-/* #skills ul li:nth-child(odd) { background-color: #e5e5e5; } */
-/* #skills ul li:nth-child(even) { background-color: #b2b2b2; } */
-#skills .programming-languages ul li:nth-child(odd) { background-color: #e5e5e5; }
-#skills .programming-languages ul li:nth-child(even) { background-color: #b2b2b2; }
-#skills .technologies-frameworks ul li:nth-child(even) { background-color: #e5e5e5; }
-#skills .technologies-frameworks ul li:nth-child(odd) { background-color: #b2b2b2; }
-#skills .developer-tools ul li:nth-child(odd) { background-color: #e5e5e5; }
-#skills .developer-tools ul li:nth-child(even) { background-color: #b2b2b2; }
+#skills .container > div:nth-child(even) ul li:nth-child(even) { background-color: #b2b2b2; }
+#skills .container > div:nth-child(even) ul li:nth-child(odd) { background-color: #e5e5e5; }
+#skills .container > div:nth-child(odd) ul li:nth-child(even) { background-color: #e5e5e5; }
+#skills .container > div:nth-child(odd) ul li:nth-child(odd) { background-color: #b2b2b2; }
+/* #skills .programming-languages ul li:nth-child(odd) { background-color: #e5e5e5; } */
+/* #skills .programming-languages ul li:nth-child(even) { background-color: #b2b2b2; } */
+/* #skills .technologies-frameworks ul li:nth-child(even) { background-color: #e5e5e5; } */
+/* #skills .technologies-frameworks ul li:nth-child(odd) { background-color: #b2b2b2; } */
+/* #skills .developer-tools ul li:nth-child(odd) { background-color: #e5e5e5; } */
+/* #skills .developer-tools ul li:nth-child(even) { background-color: #b2b2b2; } */
+
+/* Experience */
+#experience .container .job .job-title {
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#experience .container .job .job-title h3 {
+  font-weight: 400;
+  letter-spacing: 2.5px;
+}
+
+#experience .container .job .job-title h4 {
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
+#experience .container .job h5 {
+  font-weight: 450;
+  letter-spacing: 2.5px;
+}
+
+#experience .container .job ul li {
+  letter-spacing: 2.5px;
+  list-style-type: disc;
+  margin: 15px 0px 15px 30px;
+}
+
+@media screen and (max-width: 720px) {
+  #experience .container .job .job-title > * { padding: 2.5px 0px;}
+  
+  /* #experience .container .job .job-title h3 {} */
+  
+  /* #experience .container .job .job-title h4 {} */
+  
+  /* #experience .container .job h5 {} */
+  
+  /* #experience .container .job ul li {} */
+}
