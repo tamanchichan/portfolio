@@ -4,6 +4,17 @@
 }
 
 /* class */
+.button {
+  background-color: #4c4cff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.50);
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  text-shadow: 0px 0px 2px #000;
+  width: fit-content;
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
@@ -249,15 +260,4 @@ header .header-menu ul li a:hover {
   font-weight: 500;
   letter-spacing: 2.5px;
   margin: 10px 0px;
-}
-
-#about .button {
-  background-color: #4c4cff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.50);
-  color: #fff;
-  display: block;
-  padding: 10px 15px;
-  text-shadow: 0px 0px 2px #000;
-  width: fit-content;
 }
