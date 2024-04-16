@@ -261,3 +261,24 @@ header .header-menu ul li a:hover {
   letter-spacing: 2.5px;
   margin: 10px 0px;
 }
+
+/* Contact */
+#contact .flex {
+  justify-content: center;
+}
+
+#contact ul {
+  display: inline-flex;
+}
+
+#contact ul li {
+  font-size: 0px;
+}
+
+#contact ul li + li {
+  margin-left: 30px;
+}
+
+#contact ul li a {
+  font-size: 40px;
+}
