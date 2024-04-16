@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Landscape from "./components/Landscape";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Landscape />
         <Skills />
+        <Projects />
         <Experience />
         <About />
         <Contact />
