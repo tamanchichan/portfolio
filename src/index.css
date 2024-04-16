@@ -282,3 +282,11 @@ header .header-menu ul li a:hover {
 #contact ul li a {
   font-size: 40px;
 }
+
+/* Footer */
+footer {
+  align-items: center;
+  display: flex;
+  height: 150px;
+  text-align: center;
+}
