@@ -5,7 +5,9 @@ function Footer() {
   
   return (
     <div class="container">
-      <p>Copyright &copy; {year} By @tamanchichan</p>
+      <p>
+        Copyright &copy; {year} By <a href="https://www.linkedin.com/in/tamanchichan/" target="_blank" className="footer-username">@tamanchichan</a>
+      </p>
     </div>
   )
 };

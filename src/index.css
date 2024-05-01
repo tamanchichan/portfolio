@@ -29,6 +29,11 @@
   flex-wrap: wrap;
 }
 
+.footer-username {
+  text-decoration: underline;
+  user-select: all;
+}
+
 /* html */
 html {
   scroll-behavior: smooth;
@@ -55,6 +60,8 @@ h1, h2, h3 {
   font-weight: 400;
   letter-spacing: 2.5px;
 }
+
+a { color: #000; }
 
 /* section */
 section:not(:first-child) {
