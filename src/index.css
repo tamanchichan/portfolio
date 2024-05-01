@@ -15,6 +15,10 @@
   width: fit-content;
 }
 
+.button:hover {
+  background-color: #3838ff;
+}
+
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
@@ -263,25 +267,50 @@ header .header-menu ul li a:hover {
 }
 
 /* Contact */
-#contact .flex {
-  justify-content: center;
+#contact .container div { margin: auto; } /* to cancel 'section .container div {margin-top: 25px;}' */
+#contact .flex { justify-content: center; }
+#contact form { margin: 25px 0px; }
+
+#contact form fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 15px 25px;
 }
 
-#contact ul {
-  display: inline-flex;
+/* included '.container' to cancel {margin: auto} */
+#contact .container form fieldset div + div { margin-top: 5px; }
+#contact label, #contact input, #contact textarea, #contact button[type="submit"] { display: block; }
+#contact .mailto fieldset label { font-size: 18px; }
+
+#contact .mailto fieldset input {
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px 10px;
+  width: 300px;
 }
 
-#contact ul li {
-  font-size: 0px;
+#contact .mailto fieldset textarea {
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-size: 15px;
+  height: 150px;
+  padding: 10px;
+  width: 300px;
 }
 
-#contact ul li + li {
-  margin-left: 30px;
+#contact .mailto fieldset button[type="submit"] {
+  margin: 0 0 0 auto;
+  margin-top: 10px;
 }
 
-#contact ul li a {
-  font-size: 40px;
-}
+#contact .social-media ul { display: inline-flex; }
+#contact .social-media ul li { font-size: 0px; }
+#contact .social-media ul li + li { margin-left: 30px; }
+#contact .social-media ul li a { font-size: 50px; }
+#contact .social-media ul li a .fa-github { color: #000; }
+#contact .social-media ul li a .fa-instagram { color: #c73678; }
+#contact .social-media ul li a .fa-linkedin { color: #0a66c2; }
 
 /* Footer */
 footer {
