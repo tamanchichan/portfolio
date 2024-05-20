@@ -3,7 +3,7 @@ import React from "react"
 function Contact() {
   return (
     <section id="contact">
-      <div class="container">
+      <div className="container">
         <h2>Contact Me</h2>
         <div className="flex mailto">
           <form action="mailto:tamanchichan@gmail.com" encType="multipart/form-data" method="POST">
