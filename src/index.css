@@ -1,8 +1,3 @@
-:root {
-  --body-bg-color: #1f1f1f;
-  --body-color: #fff;
-}
-
 /* class */
 .button {
   background-color: #4c4cff;
@@ -40,10 +35,8 @@ html {
 }
 
 body {
-  /* background-color: var(--body-bg-color); */
-  /* color: var(--body-color); */
   background-color: #f2f4f6;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 h1 { font-size: 50px; }
