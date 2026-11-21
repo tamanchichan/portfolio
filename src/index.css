@@ -128,7 +128,6 @@ header .header-menu ul li a {
 
 header .header-menu ul li a:hover {
   color: #4c4cff;
-  transition: color 0.25s ease-in;
 }
 
 @media screen and (max-width: 720px) {
@@ -206,12 +205,6 @@ header .header-menu ul li a:hover {
 #skills .container > div:nth-child(even) ul li:nth-child(odd) { background-color: #e5e5e5; }
 #skills .container > div:nth-child(odd) ul li:nth-child(even) { background-color: #e5e5e5; }
 #skills .container > div:nth-child(odd) ul li:nth-child(odd) { background-color: #b2b2b2; }
-/* #skills .programming-languages ul li:nth-child(odd) { background-color: #e5e5e5; } */
-/* #skills .programming-languages ul li:nth-child(even) { background-color: #b2b2b2; } */
-/* #skills .technologies-frameworks ul li:nth-child(even) { background-color: #e5e5e5; } */
-/* #skills .technologies-frameworks ul li:nth-child(odd) { background-color: #b2b2b2; } */
-/* #skills .developer-tools ul li:nth-child(odd) { background-color: #e5e5e5; } */
-/* #skills .developer-tools ul li:nth-child(even) { background-color: #b2b2b2; } */
 
 /* Experience */
 #experience .container .job .job-title {
