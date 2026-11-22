@@ -1,6 +1,6 @@
 function Landscape() {
   return(
-    <section>
+    <section id="landscape">
       <div className="container">
         <div className="user-info">
           <p>

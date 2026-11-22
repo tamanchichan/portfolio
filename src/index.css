@@ -74,11 +74,14 @@ section:nth-child(odd) { background-color: #f2f4f6; }
 
 /* Header */
 /* header {} */
+header {
+    height: 100%;
+}
 
 header .header-user {
   align-items: center;
   display: grid;
-  height: 150px;
+  /* height: 150px; */
   margin: 25px 0px;
   place-items: center;
 }
@@ -151,10 +154,15 @@ header .header-menu ul li a:hover {
 }
 
 /* Landscape */
+#landscape {
+    padding-top: 0px;
+}
+
 .user-info {
   align-items: center;
   display: grid;
-  height: calc(100vh - 225px - 25px - 25px);
+  height: calc(100dvh - 325px - 25px - 25px);
+  margin-top: 0px !important;
   place-content: center;
   text-align: center;
 }
