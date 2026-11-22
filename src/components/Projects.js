@@ -58,9 +58,11 @@ function Projects() {
                                     {project.name}
                                 </a>
                             </h3>
-                            {project.descriptions.map((description, index) => (
-                                <p key={index}>{description}</p>
-                            ))}
+                            <ul>
+                                {project.descriptions.map((description, index) => (
+                                    <li key={index}>{description}</li>
+                                ))}
+                            </ul>
                         </div>
                     ))
                 )}
