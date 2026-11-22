@@ -9,21 +9,19 @@ function About() {
           <p>
             Hello! My name is Taman, and I am a Software Developer alumni of
             the Manitoba Institute of Trades & Technology, Winnipeg, Canada.
-            I am from Rio de Janeiro, Brazil.
           </p>
           <p>
-            I am proficient in both front-end and back-end technologies, with
+            I have experience in both front-end and back-end technologies, with
             expertise in programming languages in JavaScript and C#.
           </p>
           <p>
             I am also a critical thinker and effective problem-solver with the
-            ability to anticipate and prevent setbacks. Flexible with the
-            aptitude to work well under pressure and fast-paced environments.
+            ability to anticipate and prevent setbacks, look for multiple
+            solutions.
           </p>
           <p>
-            My strong interpersonal communication skills, analytical and
-            innovative skills, all geared towards approaching challenging
-            situations with a solutions-oriented mindset.
+            I am a eager to keep on learning, can learn quickly and perform
+            duties with minimal or zero supervision in a fast-paced environment.
           </p>
           <p>
             <a
